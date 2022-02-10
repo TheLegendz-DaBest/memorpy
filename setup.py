@@ -7,10 +7,6 @@ try:
 except ImportError:
     from distutils.core import setup
 
-if sys.version_info < (2, 5):
-    sys.exit("requires python 2.5 and up")
-if sys.version_info[0] == 3:
-	sys.exit("not compatible python 3")
 
 here = os.path.dirname(__file__)
 
